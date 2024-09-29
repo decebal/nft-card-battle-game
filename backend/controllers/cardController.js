@@ -21,12 +21,12 @@ exports.updateCard = async (req, res) => {
     }
 
     card.name = req.body.name || card.name;
-    card.power = req.body.power || card.power;
     card.hp = req.body.hp || card.hp;
-    card.level = req.body.level || card.level;
+    card.power = req.body.power || card.power;
     card.speed = req.body.speed || card.speed;
-    card.stamina = req.body.stamina || card.stamina;
+    card.level = req.body.level || card.level;
     card.theme = req.body.theme || card.theme;
+    card.stamina = req.body.stamina || card.stamina;
 
     const updatedCard = await card.save();
 
