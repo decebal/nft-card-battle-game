@@ -6,12 +6,12 @@ const collectionRoutes = require('./routes/collectionRoutes');
 const cardRoutes = require('./routes/cardRoutes');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const { updateCookie } = require('./controllers/usercontroller');
+// const { updateCookie } = require('./controllers/usercontroller');
 
 dotenv.config();
 connectDB();
 
-updateCookie();
+// updateCookie();
   
 const app = express();
 const PORT = process.env.PORT || 5000;

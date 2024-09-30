@@ -53,7 +53,7 @@ function Navbar() {
           <Link
             to='/login'
             onClick={() => {
-              localStorage.removeItem('WK__LAST_CONNECT_WALLET_NAME');
+              // localStorage.removeItem('WK__LAST_CONNECT_WALLET_NAME');
               wallet.disconnect();
             }}
             className='hover:opacity-80'
