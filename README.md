@@ -1,3 +1,8 @@
+⚠️ Beware this repository is at the root of a SCAM!
+
+[Original](https://github.com/StreymLTD24/nft-card-battle-game) private repository.
+
+
 # SuiFrenia Game by 100xEngineers based on SUIFRENS
 <img src="https://suifrens.com/images/header-mobile.svg" alt="" align="center"/>
 
